@@ -9,7 +9,7 @@ const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="w-full top-0 p-5 fixed bg-transparent z-50">
+    <nav className="w-full top-0 p-5 fixed bg-black md:bg-transparent z-50 ">
       <div className="max-w-7xl mx-auto flex items-center justify-between text-black ">
         {/* Logo */}
         <div className="text-black flex flex-row gap-4">
