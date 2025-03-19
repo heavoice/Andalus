@@ -10,8 +10,7 @@ import {
 } from "react-icons/fa";
 import { SiShopee } from "react-icons/si";
 import Link from "next/link";
-import { FaLocationDot } from "react-icons/fa6";
-import { IoMail } from "react-icons/io5";
+import { IoMail, IoLocationSharp } from "react-icons/io5";
 
 const Footer = () => {
   return (
@@ -26,7 +25,7 @@ const Footer = () => {
             height={36}
           />
 
-          <div className="flex-row flex gap-2 sm:gap-4 text-2xl w-fit bg-black p-4  text-[rgb(233,173,25)] rounded-full sm:ml-0 ">
+          <div className="flex-row flex gap-2 sm:gap-4 text-2xl w-fit bg-black p-4  text-[rgb(233,173,25)] rounded-full sm:ml-0 xxs:mt-6 xs:mt-0">
             <FaFacebook />
             <FaInstagram />
             <FaTiktok />
@@ -71,20 +70,20 @@ const Footer = () => {
         <div className="font-secular text-3xl">
           Contact Us
           <div className="grid grid-cols-1 mt-4 gap-2">
-            <div className="text-base font-medium flex items-center font-didact">
-              <FaLocationDot className="mt-1 text-3xl" />
-              <p className="ml-2 ">
+            <div className="flex items-center gap-2">
+              <IoLocationSharp className="w-8 h-8 min-w-fit sm:w-10 sm:h-10" />
+              <p className="text-base font-didact">
                 Jl. Nasional III, Rancagoong, Kec. Cilaku, Kabupaten Cianjur,
                 Jawa Barat 43285
               </p>
             </div>
-            <div className="text-base font-medium flex items-center font-didact">
-              <FaWhatsapp className="mt-1 text-3xl" />
-              <p className="ml-2 ">+62 857-7266-5865</p>
+            <div className="flex items-center gap-2">
+              <FaWhatsapp className="w-8 h-8 min-w-fit sm:w-10 sm:h-10" />
+              <p className="text-base font-didact">+62 857-7266-5865</p>
             </div>
-            <div className="text-base font-medium flex items-center font-didact">
-              <IoMail className="mt-1 text-3xl" />
-              <p className="ml-2 ">andalus.rtg@gmail.com</p>
+            <div className="flex items-center gap-2">
+              <IoMail className="w-8 h-8 min-w-fit sm:w-10 sm:h-10" />
+              <p className="text-base font-didact">andalus.rtg@gmail.com</p>
             </div>
           </div>
         </div>
